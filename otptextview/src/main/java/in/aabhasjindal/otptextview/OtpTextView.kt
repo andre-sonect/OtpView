@@ -13,6 +13,7 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import java.util.*
 import java.util.regex.Pattern
+import android.view.inputmethod.InputMethodManager
 
 class OtpTextView : FrameLayout {
 
