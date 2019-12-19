@@ -173,6 +173,14 @@ class OtpTextView : FrameLayout {
     fun requestFocusOTP() {
         otpChildEditText?.requestFocus()
     }
+    
+    fun getOTPEditText(): OTPChildEditText? {
+        return otpChildEditText
+    }
+    
+    fun clearOTP() {
+        otpChildEditText?.setText("")
+    }
 
     fun showError() {
         itemViews?.let { itemViews ->
