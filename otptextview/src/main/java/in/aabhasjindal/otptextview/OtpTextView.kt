@@ -177,12 +177,12 @@ class OtpTextView : FrameLayout {
     
     fun showKeyboard(){
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.showSoftInput(this, InputMethodManager.SHOW_FORCED)
+        imm.showSoftInput(otpChildEditText, InputMethodManager.SHOW_FORCED)
     }
     
     fun hideKeyboard(){
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(windowToken, 0)
+        imm.hideSoftInputFromWindow(otpChildEditText.windowToken, 0)
         otpChildEditText?.clearFocus()
     }
     
